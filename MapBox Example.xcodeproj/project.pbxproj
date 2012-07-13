@@ -40,13 +40,6 @@
 			remoteGlobalIDString = 17F31EFA1331050A00122B16;
 			remoteInfo = MapView;
 		};
-		DDC4BEA4152E2FDE00089409 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD96557015264A080008517A /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
-			remoteInfo = "Unit Tests";
-		};
 		DDC4BEA6152E300400089409 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD96557015264A080008517A /* MapView.xcodeproj */;
@@ -121,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				DDC4BEA3152E2FDE00089409 /* libMapView.a */,
-				DDC4BEA5152E2FDE00089409 /* RM Unit Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,13 +254,6 @@
 			fileType = archive.ar;
 			path = libMapView.a;
 			remoteRef = DDC4BEA2152E2FDE00089409 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DDC4BEA5152E2FDE00089409 /* RM Unit Tests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "RM Unit Tests.app";
-			remoteRef = DDC4BEA4152E2FDE00089409 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
