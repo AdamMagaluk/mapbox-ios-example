@@ -25,11 +25,7 @@
     
     mapView.backgroundColor = [UIColor darkGrayColor];
     
-    mapView.decelerationMode = RMMapDecelerationFast;
-
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-
-    mapView.boundingMask = RMMapMinHeightBound;
 
     mapView.adjustTilesForRetinaDisplay = YES;
     
