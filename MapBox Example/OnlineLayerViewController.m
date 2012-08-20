@@ -26,8 +26,6 @@
     
     mapView.zoom = 2;
     
-    mapView.backgroundColor = [UIColor darkGrayColor];
-    
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     
     mapView.viewControllerPresentingAttribution = self;
