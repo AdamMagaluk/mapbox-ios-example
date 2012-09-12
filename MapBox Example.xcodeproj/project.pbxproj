@@ -11,6 +11,7 @@
 		DD49B8C615E2D64F0055CCEE /* LoadingTile.png in Resources */ = {isa = PBXBuildFile; fileRef = DD49B8C415E2D64F0055CCEE /* LoadingTile.png */; };
 		DD49B8C715E2D64F0055CCEE /* LoadingTileZoom.png in Resources */ = {isa = PBXBuildFile; fileRef = DD49B8C515E2D64F0055CCEE /* LoadingTileZoom.png */; };
 		DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BF10152E455500089409 /* libz.dylib */; };
+		DD9BFE28160140520011F174 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE27160140520011F174 /* Default-568h@2x.png */; };
 		DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapView.a */; };
 		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
 		DDC4BEC2152E351F00089409 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC0152E351F00089409 /* online@2x.png */; };
@@ -56,6 +57,7 @@
 		DD49B8C415E2D64F0055CCEE /* LoadingTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoadingTile.png; path = "MapBox-iOS-SDK/MapView/Map/Resources/LoadingTile.png"; sourceTree = SOURCE_ROOT; };
 		DD49B8C515E2D64F0055CCEE /* LoadingTileZoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoadingTileZoom.png; path = "MapBox-iOS-SDK/MapView/Map/Resources/LoadingTileZoom.png"; sourceTree = SOURCE_ROOT; };
 		DD96557015264A080008517A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		DD9BFE27160140520011F174 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DDC4BEBF152E351F00089409 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
 		DDC4BEC0152E351F00089409 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "online@2x.png"; sourceTree = "<group>"; };
 		DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
 				DDEF3A391522813600DE6DB0 /* main.m */,
 				DDEF3A3B1522813600DE6DB0 /* MapBox Example-Prefix.pch */,
+				DD9BFE27160140520011F174 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				DDD9E7A915912CA700F29679 /* icon.png in Resources */,
 				DD49B8C615E2D64F0055CCEE /* LoadingTile.png in Resources */,
 				DD49B8C715E2D64F0055CCEE /* LoadingTileZoom.png in Resources */,
+				DD9BFE28160140520011F174 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
