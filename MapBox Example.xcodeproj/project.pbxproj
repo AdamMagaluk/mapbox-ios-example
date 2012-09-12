@@ -389,6 +389,7 @@
 		DDB867EF1551E029000E06D3 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBox Example/MapBox Example-Prefix.pch";
@@ -449,6 +450,7 @@
 		DDEF3A481522813600DE6DB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBox Example/MapBox Example-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/MapBox-iOS-SDK/**";
@@ -463,6 +465,7 @@
 		DDEF3A491522813600DE6DB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBox Example/MapBox Example-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/MapBox-iOS-SDK/**";
