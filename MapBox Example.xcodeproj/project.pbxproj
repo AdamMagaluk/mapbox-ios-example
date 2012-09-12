@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DD3A27EE1582A0AB00DADEFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */; };
-		DD49B8C615E2D64F0055CCEE /* LoadingTile.png in Resources */ = {isa = PBXBuildFile; fileRef = DD49B8C415E2D64F0055CCEE /* LoadingTile.png */; };
-		DD49B8C715E2D64F0055CCEE /* LoadingTileZoom.png in Resources */ = {isa = PBXBuildFile; fileRef = DD49B8C515E2D64F0055CCEE /* LoadingTileZoom.png */; };
 		DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BF10152E455500089409 /* libz.dylib */; };
 		DD9BFE28160140520011F174 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE27160140520011F174 /* Default-568h@2x.png */; };
+		DD9BFE42160141890011F174 /* HeadingAngleSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE36160141890011F174 /* HeadingAngleSmall.png */; };
+		DD9BFE43160141890011F174 /* HeadingAngleSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE37160141890011F174 /* HeadingAngleSmall@2x.png */; };
+		DD9BFE44160141890011F174 /* LoadingTile.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE38160141890011F174 /* LoadingTile.png */; };
+		DD9BFE45160141890011F174 /* LoadingTileZoom.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE39160141890011F174 /* LoadingTileZoom.png */; };
+		DD9BFE46160141890011F174 /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE3A160141890011F174 /* TrackingDot.png */; };
+		DD9BFE47160141890011F174 /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE3B160141890011F174 /* TrackingDot@2x.png */; };
+		DD9BFE48160141890011F174 /* TrackingDotHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE3C160141890011F174 /* TrackingDotHalo.png */; };
+		DD9BFE49160141890011F174 /* TrackingDotHalo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE3D160141890011F174 /* TrackingDotHalo@2x.png */; };
+		DD9BFE4A160141890011F174 /* TrackingHeading.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE3E160141890011F174 /* TrackingHeading.png */; };
+		DD9BFE4B160141890011F174 /* TrackingHeading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE3F160141890011F174 /* TrackingHeading@2x.png */; };
+		DD9BFE4C160141890011F174 /* TrackingLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE40160141890011F174 /* TrackingLocation.png */; };
+		DD9BFE4D160141890011F174 /* TrackingLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE41160141890011F174 /* TrackingLocation@2x.png */; };
 		DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapView.a */; };
 		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
 		DDC4BEC2152E351F00089409 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC0152E351F00089409 /* online@2x.png */; };
@@ -54,10 +64,20 @@
 
 /* Begin PBXFileReference section */
 		DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		DD49B8C415E2D64F0055CCEE /* LoadingTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoadingTile.png; path = "MapBox-iOS-SDK/MapView/Map/Resources/LoadingTile.png"; sourceTree = SOURCE_ROOT; };
-		DD49B8C515E2D64F0055CCEE /* LoadingTileZoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoadingTileZoom.png; path = "MapBox-iOS-SDK/MapView/Map/Resources/LoadingTileZoom.png"; sourceTree = SOURCE_ROOT; };
 		DD96557015264A080008517A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		DD9BFE27160140520011F174 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DD9BFE36160141890011F174 /* HeadingAngleSmall.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = HeadingAngleSmall.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/HeadingAngleSmall.png"; sourceTree = "<group>"; };
+		DD9BFE37160141890011F174 /* HeadingAngleSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HeadingAngleSmall@2x.png"; path = "../MapBox-iOS-SDK/MapView/Map/Resources/HeadingAngleSmall@2x.png"; sourceTree = "<group>"; };
+		DD9BFE38160141890011F174 /* LoadingTile.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = LoadingTile.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/LoadingTile.png"; sourceTree = "<group>"; };
+		DD9BFE39160141890011F174 /* LoadingTileZoom.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = LoadingTileZoom.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/LoadingTileZoom.png"; sourceTree = "<group>"; };
+		DD9BFE3A160141890011F174 /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = TrackingDot.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingDot.png"; sourceTree = "<group>"; };
+		DD9BFE3B160141890011F174 /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TrackingDot@2x.png"; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingDot@2x.png"; sourceTree = "<group>"; };
+		DD9BFE3C160141890011F174 /* TrackingDotHalo.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = TrackingDotHalo.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingDotHalo.png"; sourceTree = "<group>"; };
+		DD9BFE3D160141890011F174 /* TrackingDotHalo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TrackingDotHalo@2x.png"; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingDotHalo@2x.png"; sourceTree = "<group>"; };
+		DD9BFE3E160141890011F174 /* TrackingHeading.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = TrackingHeading.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingHeading.png"; sourceTree = "<group>"; };
+		DD9BFE3F160141890011F174 /* TrackingHeading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TrackingHeading@2x.png"; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingHeading@2x.png"; sourceTree = "<group>"; };
+		DD9BFE40160141890011F174 /* TrackingLocation.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = TrackingLocation.png; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingLocation.png"; sourceTree = "<group>"; };
+		DD9BFE41160141890011F174 /* TrackingLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TrackingLocation@2x.png"; path = "../MapBox-iOS-SDK/MapView/Map/Resources/TrackingLocation@2x.png"; sourceTree = "<group>"; };
 		DDC4BEBF152E351F00089409 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
 		DDC4BEC0152E351F00089409 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "online@2x.png"; sourceTree = "<group>"; };
 		DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
@@ -136,8 +156,19 @@
 				DDC4BECE152E38D200089409 /* interactive@2x.png */,
 				DDD9E7A715912CA700F29679 /* icon.png */,
 				DDD9E7A615912CA700F29679 /* icon@2x.png */,
-				DD49B8C415E2D64F0055CCEE /* LoadingTile.png */,
-				DD49B8C515E2D64F0055CCEE /* LoadingTileZoom.png */,
+				DD9BFE27160140520011F174 /* Default-568h@2x.png */,
+				DD9BFE36160141890011F174 /* HeadingAngleSmall.png */,
+				DD9BFE37160141890011F174 /* HeadingAngleSmall@2x.png */,
+				DD9BFE38160141890011F174 /* LoadingTile.png */,
+				DD9BFE39160141890011F174 /* LoadingTileZoom.png */,
+				DD9BFE3A160141890011F174 /* TrackingDot.png */,
+				DD9BFE3B160141890011F174 /* TrackingDot@2x.png */,
+				DD9BFE3C160141890011F174 /* TrackingDotHalo.png */,
+				DD9BFE3D160141890011F174 /* TrackingDotHalo@2x.png */,
+				DD9BFE3E160141890011F174 /* TrackingHeading.png */,
+				DD9BFE3F160141890011F174 /* TrackingHeading@2x.png */,
+				DD9BFE40160141890011F174 /* TrackingLocation.png */,
+				DD9BFE41160141890011F174 /* TrackingLocation@2x.png */,
 			);
 			name = Resources;
 			path = "MapBox Example";
@@ -199,7 +230,6 @@
 				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
 				DDEF3A391522813600DE6DB0 /* main.m */,
 				DDEF3A3B1522813600DE6DB0 /* MapBox Example-Prefix.pch */,
-				DD9BFE27160140520011F174 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -282,9 +312,19 @@
 				DDC4BED0152E38D200089409 /* interactive@2x.png in Resources */,
 				DDD9E7A815912CA700F29679 /* icon@2x.png in Resources */,
 				DDD9E7A915912CA700F29679 /* icon.png in Resources */,
-				DD49B8C615E2D64F0055CCEE /* LoadingTile.png in Resources */,
-				DD49B8C715E2D64F0055CCEE /* LoadingTileZoom.png in Resources */,
 				DD9BFE28160140520011F174 /* Default-568h@2x.png in Resources */,
+				DD9BFE42160141890011F174 /* HeadingAngleSmall.png in Resources */,
+				DD9BFE43160141890011F174 /* HeadingAngleSmall@2x.png in Resources */,
+				DD9BFE44160141890011F174 /* LoadingTile.png in Resources */,
+				DD9BFE45160141890011F174 /* LoadingTileZoom.png in Resources */,
+				DD9BFE46160141890011F174 /* TrackingDot.png in Resources */,
+				DD9BFE47160141890011F174 /* TrackingDot@2x.png in Resources */,
+				DD9BFE48160141890011F174 /* TrackingDotHalo.png in Resources */,
+				DD9BFE49160141890011F174 /* TrackingDotHalo@2x.png in Resources */,
+				DD9BFE4A160141890011F174 /* TrackingHeading.png in Resources */,
+				DD9BFE4B160141890011F174 /* TrackingHeading@2x.png in Resources */,
+				DD9BFE4C160141890011F174 /* TrackingLocation.png in Resources */,
+				DD9BFE4D160141890011F174 /* TrackingLocation@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
