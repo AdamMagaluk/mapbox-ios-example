@@ -23,7 +23,7 @@
     
     mapView.zoom = 2;
     
-    mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 
     mapView.adjustTilesForRetinaDisplay = YES;
     
