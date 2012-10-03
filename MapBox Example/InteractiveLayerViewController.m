@@ -8,11 +8,6 @@
 
 #import "InteractiveLayerViewController.h"
 
-#import "RMMapView.h"
-#import "RMMapBoxSource.h"
-#import "RMMBTilesSource.h"
-#import "RMInteractiveSource.h"
-
 #import <QuartzCore/QuartzCore.h>
 
 @implementation InteractiveLayerViewController

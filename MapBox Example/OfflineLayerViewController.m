@@ -8,8 +8,7 @@
 
 #import "OfflineLayerViewController.h"
 
-#import "RMMapView.h"
-#import "RMMBTilesSource.h"
+#import "MapBox.h"
 
 @implementation OfflineLayerViewController
 
