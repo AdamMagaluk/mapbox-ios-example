@@ -27,8 +27,6 @@
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
-    mapView.viewControllerPresentingAttribution = self;
-
     [self.view addSubview:mapView];
 }
 
