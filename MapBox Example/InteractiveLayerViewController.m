@@ -16,7 +16,7 @@
 {
     [super viewDidLoad];
 
-    RMMapBoxSource *interactiveSource = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/mapbox.geography-class.json"]];
+    RMMapBoxSource *interactiveSource = [[RMMapBoxSource alloc] initWithMapID:@"mapbox.geography-class"];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:interactiveSource];
 
