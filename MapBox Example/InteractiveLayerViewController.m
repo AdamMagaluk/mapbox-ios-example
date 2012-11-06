@@ -26,7 +26,7 @@
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 
-    mapView.adjustTilesForRetinaDisplay = YES;
+    mapView.adjustTilesForRetinaDisplay = YES; // these tiles aren't designed specifically for retina, so make them legible
     
     [self.view addSubview:mapView];
 }
