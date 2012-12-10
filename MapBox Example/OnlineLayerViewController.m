@@ -10,8 +10,8 @@
 
 #import "MapBox.h"
 
-#define kNormalMapID @"justin.map-s2effxa8"
-#define kRetinaMapID @"justin.map-kswgei2n"
+#define kNormalMapID @"examples.map-z2effxa8"
+#define kRetinaMapID @"examples.map-zswgei2n"
 
 @implementation OnlineLayerViewController
 

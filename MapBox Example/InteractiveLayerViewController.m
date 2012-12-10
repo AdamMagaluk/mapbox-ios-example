@@ -16,7 +16,7 @@
 {
     [super viewDidLoad];
 
-    RMMapBoxSource *interactiveSource = [[RMMapBoxSource alloc] initWithMapID:@"mapbox.geography-class"];
+    RMMapBoxSource *interactiveSource = [[RMMapBoxSource alloc] initWithMapID:@"examples.map-zmy97flj"];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:interactiveSource];
 
