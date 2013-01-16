@@ -80,6 +80,8 @@
 
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 32)];
 
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+
     imageView.image = annotation.userInfo;
 
     marker.leftCalloutAccessoryView = imageView;
