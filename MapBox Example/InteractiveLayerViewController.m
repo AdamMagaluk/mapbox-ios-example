@@ -35,72 +35,44 @@
 
 - (void)singleTapOnMap:(RMMapView *)mapView at:(CGPoint)point
 {
-    if ([self.view.subviews count] == 1)
+    [mapView removeAllAnnotations];
+
+    RMMBTilesSource *source = (RMMBTilesSource *)mapView.tileSource;
+
+    if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
     {
-        id source = mapView.tileSource;
+        NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeFull // try for full-length first
+                                                         forPoint:point 
+                                                        inMapView:mapView];
 
-        if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [(id <RMInteractiveSource>)source supportsInteractivity])
+        if ( ! formattedOutput || ! [formattedOutput length])
         {
-            source = (id <RMInteractiveSource>)source;
+            formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeTeaser // else try for a teaser
+                                                   forPoint:point
+                                                  inMapView:mapView];
+        }
 
-            NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeFull 
-                                                             forPoint:point 
-                                                            inMapView:mapView];
+        if (formattedOutput && [formattedOutput length])
+        {
+            NSUInteger startOfCountryName = ([formattedOutput rangeOfString:@"<strong>"].location + [@"<strong>" length]);
+            NSUInteger endOfCountryName   = [formattedOutput rangeOfString:@"</strong>"].location;
 
-            if ( ! formattedOutput || ! [formattedOutput length])
-                formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeTeaser 
-                                                       forPoint:point 
-                                                      inMapView:mapView];
+            NSRange rangeOfCountryName = NSMakeRange(startOfCountryName, endOfCountryName - startOfCountryName);
 
-            if (formattedOutput && [formattedOutput length])
-            {
-                mapView.userInteractionEnabled = NO;
+            NSString *countryName = [formattedOutput substringWithRange:rangeOfCountryName];
 
-                CGRect frame = CGRectMake(0, 0, 200, 140);
+            RMAnnotation *annotation = [RMAnnotation annotationWithMapView:mapView coordinate:[mapView pixelToCoordinate:point] andTitle:countryName];
 
-                UIWebView *webView = [[UIWebView alloc] initWithFrame:frame];
+            [mapView addAnnotation:annotation];
 
-                [webView loadHTMLString:formattedOutput baseURL:nil];
-
-                webView.layer.borderColor = [[UIColor blackColor] CGColor];
-                webView.layer.borderWidth = 2.0;
-
-                webView.userInteractionEnabled = NO;
-
-                [self.view addSubview:webView];
-
-                webView.transform = CGAffineTransformMakeScale(0.01, 0.01);
-                webView.center    = point;
-                webView.alpha     = 0.0;
-
-                [UIView animateWithDuration:0.5
-                                 animations:^(void)
-                                 {
-                                     webView.transform = CGAffineTransformIdentity;
-                                     webView.center    = mapView.center;
-                                     webView.alpha     = 1.0;
-                                 }
-                                 completion:^(BOOL finished)
-                                 {
-                                     [UIView animateWithDuration:0.5
-                                                           delay:2.0
-                                                         options:UIViewAnimationCurveEaseInOut
-                                                      animations:^(void)
-                                                      {
-                                                          webView.transform = CGAffineTransformMakeScale(0.01, 0.01);
-                                                          webView.center    = point;
-                                                          webView.alpha     = 0.0;
-                                                      }
-                                                      completion:^(BOOL finished)
-                                                      {
-                                                          [webView removeFromSuperview];
-
-                                                          mapView.userInteractionEnabled = YES;
-                                                      }];
-                                 }];
-            }
+            [mapView selectAnnotation:annotation animated:YES];
         }
     }
+}
+
+- (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
+{
+    return [[RMMarker alloc] initWithMapBoxMarkerImage:@"embassy"];
 }
 
 @end
