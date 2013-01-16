@@ -41,16 +41,9 @@
 
     if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
     {
-        NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeFull // try for full-length first
+        NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeFull
                                                          forPoint:point 
                                                         inMapView:mapView];
-
-        if ( ! formattedOutput || ! [formattedOutput length])
-        {
-            formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeTeaser // else try for a teaser
-                                                   forPoint:point
-                                                  inMapView:mapView];
-        }
 
         if (formattedOutput && [formattedOutput length])
         {
