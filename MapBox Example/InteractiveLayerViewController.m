@@ -10,6 +10,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import "NSData+Base64.h"
+
 @implementation InteractiveLayerViewController
 
 - (void)viewDidLoad
@@ -41,20 +43,29 @@
 
     if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
     {
-        NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeFull
+        NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeTeaser
                                                          forPoint:point 
                                                         inMapView:mapView];
 
         if (formattedOutput && [formattedOutput length])
         {
-            NSUInteger startOfCountryName = ([formattedOutput rangeOfString:@"<strong>"].location + [@"<strong>" length]);
+            // parse the country name out of the content
+            //
+            NSUInteger startOfCountryName = [formattedOutput rangeOfString:@"<strong>"].location + [@"<strong>" length];
             NSUInteger endOfCountryName   = [formattedOutput rangeOfString:@"</strong>"].location;
 
-            NSRange rangeOfCountryName = NSMakeRange(startOfCountryName, endOfCountryName - startOfCountryName);
+            NSString *countryName = [formattedOutput substringWithRange:NSMakeRange(startOfCountryName, endOfCountryName - startOfCountryName)];
 
-            NSString *countryName = [formattedOutput substringWithRange:rangeOfCountryName];
+            // parse the flag image out of the content
+            //
+            NSUInteger startOfFlagImage = [formattedOutput rangeOfString:@"base64,"].location + [@"base64," length];
+            NSUInteger endOfFlagImage   = [formattedOutput rangeOfString:@"\" style"].location;
+
+            UIImage *flagImage = [UIImage imageWithData:[NSData dataFromBase64String:[formattedOutput substringWithRange:NSMakeRange(startOfFlagImage, endOfFlagImage)]]];
 
             RMAnnotation *annotation = [RMAnnotation annotationWithMapView:mapView coordinate:[mapView pixelToCoordinate:point] andTitle:countryName];
+
+            annotation.userInfo = flagImage;
 
             [mapView addAnnotation:annotation];
 
@@ -65,7 +76,15 @@
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
 {
-    return [[RMMarker alloc] initWithMapBoxMarkerImage:@"embassy"];
+    RMMarker *marker = [[RMMarker alloc] initWithMapBoxMarkerImage:@"embassy"];
+
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 32)];
+
+    imageView.image = annotation.userInfo;
+
+    marker.leftCalloutAccessoryView = imageView;
+
+    return marker;
 }
 
 @end

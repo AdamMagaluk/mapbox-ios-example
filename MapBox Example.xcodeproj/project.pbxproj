@@ -12,6 +12,7 @@
 		DD97C05616485E83007C4652 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapBox.a */; };
 		DD97C05716485EE9007C4652 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD97C05416485E46007C4652 /* MapBox.bundle */; };
 		DD9BFE28160140520011F174 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE27160140520011F174 /* Default-568h@2x.png */; };
+		DDA6DFBF16A6364F00D373D8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DFBD16A6364F00D373D8 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
 		DDC4BEC2152E351F00089409 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC0152E351F00089409 /* online@2x.png */; };
 		DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */; };
@@ -62,6 +63,8 @@
 		DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DD96557015264A080008517A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		DD9BFE27160140520011F174 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DDA6DFBD16A6364F00D373D8 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		DDA6DFBE16A6364F00D373D8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		DDC4BEBF152E351F00089409 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
 		DDC4BEC0152E351F00089409 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "online@2x.png"; sourceTree = "<group>"; };
 		DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
@@ -120,6 +123,16 @@
 			path = "MapBox Example";
 			sourceTree = "<group>";
 		};
+		DDA6DFC016A636BC00D373D8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DDA6DFBE16A6364F00D373D8 /* NSData+Base64.h */,
+				DDA6DFBD16A6364F00D373D8 /* NSData+Base64.m */,
+			);
+			name = Categories;
+			path = "MapBox Example";
+			sourceTree = "<group>";
+		};
 		DDC4BE9C152E2FDE00089409 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 			children = (
 				DDEF3A331522813600DE6DB0 /* MapBox Example */,
 				DDC4BEC3152E356F00089409 /* Resources */,
+				DDA6DFC016A636BC00D373D8 /* Categories */,
 				DD96556F152649F10008517A /* MapBox SDK */,
 				DDEF3A2C1522813600DE6DB0 /* Frameworks */,
 				DDEF3A2A1522813600DE6DB0 /* Products */,
@@ -309,6 +323,7 @@
 				DDEF3A411522813600DE6DB0 /* OnlineLayerViewController.m in Sources */,
 				DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */,
 				DDC4BEF1152E3EEE00089409 /* InteractiveLayerViewController.m in Sources */,
+				DDA6DFBF16A6364F00D373D8 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
