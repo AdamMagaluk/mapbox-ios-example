@@ -86,6 +86,8 @@
 
     marker.leftCalloutAccessoryView = imageView;
 
+    marker.canShowCallout = YES;
+
     return marker;
 }
 
