@@ -16,7 +16,7 @@
 {
     [super viewDidLoad];
 
-    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"control-room-0.2.0" ofType:@"mbtiles"];
+    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"open-streets-dc" ofType:@"mbtiles"];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource];
     

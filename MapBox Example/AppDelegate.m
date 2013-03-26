@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 
-#import "OnlineLayerViewController.h"
 #import "OfflineLayerViewController.h"
+#import "OnlineLayerViewController.h"
 #import "InteractiveLayerViewController.h"
 
 @implementation AppDelegate
@@ -24,7 +24,7 @@
     
     NSMutableArray *viewControllers = [NSMutableArray array];
     
-    for (NSString *typeString in [NSArray arrayWithObjects:@"online", @"offline", @"interactive", nil])
+    for (NSString *typeString in [NSArray arrayWithObjects:@"offline",nil])
     {
         Class ViewControllerClass = NSClassFromString([NSString stringWithFormat:@"%@LayerViewController", [typeString capitalizedString]]);
         
