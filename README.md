@@ -4,6 +4,10 @@ This is an example showing usage of the [MapBox iOS SDK](https://github.com/mapb
  
  1. Offline tile sources ([MBTiles](http://mbtiles.org)) with `RMMBTilesSource`
 
+### For Generating Offline Tiles Follow
+
+http://mapbox.com/tilemill/docs/guides/osm-bright-mac-quickstart/
+
 ### Build instructions
 
  1. `git clone --recursive` to pull down dependencies
